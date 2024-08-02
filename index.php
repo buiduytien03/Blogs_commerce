@@ -6,14 +6,12 @@
     <title>blogs ecommerce</title>
 </head>
 <body>
-    <?php
-        include('inc/header.php');
-    ?>
     <p>
         <?php
             include_once('system/libs/main.php');
             include_once('system/libs/DController.php');
             include_once('app/controllers/post.php');
+            include_once('system/libs/Load.php');
             // $main = new Main();
             $url = isset($_GET['url']) ? $_GET['url']:NULL;
             if($url!=NULL){
@@ -44,8 +42,5 @@
         
         ?>
     </p>
-    <?php
-        include('inc/footer.php');
-    ?>
 </body>
 </html>
