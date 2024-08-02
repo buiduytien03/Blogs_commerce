@@ -1,8 +1,11 @@
 <?php
 
-class post{
-    function __construct(){
-        echo "this is class post";
+class post extends DController{
+    public function __construct(){
+        //parent:: __construct();
+    }
+    public function chitietbaiviet(){
+        return 'chi tiết bài viết';
     }
 }
 
