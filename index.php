@@ -14,6 +14,7 @@
             include_once('system/libs/main.php');
             $main = new Main();
             $main -> chitietsanpham();
+            $main -> loadsanpham();
         ?>
     </p>
     <?php
